@@ -84,10 +84,59 @@ CLOTHING = {
         ],
         4: [
             ("in the next slide", "on slide 11"),
+            ('"16GM RAM"', '"cotton kurta"'),
+        ],
+        7: [
+            ('"plan my meals"', '"complete look for a festive season"'),
         ],
     },
     "slide10_offerings": [
-        # Keep template defaults for fashion.
+        {
+            "title_match": "Virtual Try On",
+            "desc_match": "Enable buyers to see how various sizes",
+            "title": "Virtual Try-On",
+            "desc": (
+                "Let shoppers visualize fit, drape, and styling across sizes "
+                "— see how a kurta falls at their height, how a blazer "
+                "sits on their shoulders, or how a lehenga’s flare looks "
+                "in motion.\n\n"
+                "Brands using virtual try-on have seen return rates drop by "
+                "up to 40%.\n\n"
+                "Higher conversion, fewer returns, and the confidence to buy "
+                "without visiting a store."
+            ),
+        },
+        {
+            "title_match": "Multilingual queries",
+            "desc_match": "regional languages to search",
+            "title": "Vernacular + natural-language queries",
+            "desc": (
+                "Hindi, Tamil, Telugu and Bengali queries mapped to the "
+                "English catalog — “salwar suit” \u2192 salwar kameez, "
+                "“dupatta” \u2192 stole, “pattu pudavai” "
+                "\u2192 silk saree.\n\n"
+                "Natural-language queries like “what should I wear to "
+                "a sangeet if I’m plus-size” resolve to curated outfits "
+                "instead of 0 results.\n\n"
+                "Unlocks tier-2 and tier-3 buyers for whom vernacular and "
+                "conversational phrasing are the first language of search."
+            ),
+        },
+        {
+            "title_match": "App Storefront on ChatGPT",
+            "desc_match": "40% of shoppers now start their buying journey",
+            "title": "App Storefront on ChatGPT",
+            "desc": (
+                "40% of buyers now start their fashion research on "
+                "ChatGPT / Gemini / Perplexity before visiting a brand "
+                "site.\n\n"
+                "Your catalog surfaces when shoppers ask “what should "
+                "I wear to a Goa beach wedding” — alongside Myntra, "
+                "ASOS, and Zalando.\n\n"
+                "H&M, ASOS, Zalando and Klarna are already live on "
+                "ChatGPT. Indian fashion retail is still wide open."
+            ),
+        },
     ],
     "comparison_examples": {
         1: "blue shirt",
@@ -236,6 +285,10 @@ ELECTRONICS = {
             ("“plan my meals”",
              "“quiet washing machine that fits my bathroom”"),
         ],
+        # Slide 9 — future of e-commerce
+        8: [
+            ("virtual try-on", "AR room visualization"),
+        ],
         # Slide 12 — cross-sell
         11: [
             ("a complete look instead of a single SKU",
@@ -243,13 +296,15 @@ ELECTRONICS = {
              "mic — instead of a single SKU"),
             ("Single-item sessions become full outfits",
              "Single-item sessions become full set-ups"),
+            ("Stylist-grade cross-sell", "Expert-grade bundling"),
+            ("size/fit", "specs/compatibility"),
         ],
     },
     "slide10_offerings": [
         {
             "title_match": "Virtual Try On",
             "desc_match": "Enable buyers to see how various sizes",
-            "title": "Virtual Try On / Room Fit",
+            "title": "AR Room Visualization",
             "desc": (
                 "See the 55-inch TV on your actual wall, the 1.5 ton split AC "
                 "above your bed, or the double-door fridge in your kitchen via "
@@ -436,12 +491,18 @@ FURNITURE = {
             ("“plan my meals”",
              "“office chair for back pain”"),
         ],
+        # Slide 9 — future of e-commerce
+        8: [
+            ("virtual try-on", "AR room visualization"),
+        ],
         # Slide 12 — cross-sell
         11: [
             ("a complete look instead of a single SKU",
              "a complete bedroom or living room instead of a single SKU"),
             ("Single-item sessions become full outfits",
              "Single-item sessions become full room sets"),
+            ("Stylist-grade cross-sell", "Room-grade cross-sell"),
+            ("size/fit", "room dimensions/style"),
         ],
     },
     "slide10_offerings": [
@@ -623,7 +684,7 @@ BAGS = {
             ("“for a Christian wedding”",
              "“that fits IndiGo cabin limits”"),
             ("“non white gown”",
-             "“waterproof laptop backpack”"),
+             "“airline-compliant carry-on”"),
             ("“red dress”",
              "“tan leather tote”"),
             ("“16GM RAM”",
@@ -640,6 +701,10 @@ BAGS = {
             ("“plan my meals”",
              "“bag for gym clothes and work laptop”"),
         ],
+        # Slide 9 — future of e-commerce
+        8: [
+            ("virtual try-on", "AR size visualization"),
+        ],
         # Slide 12 — cross-sell
         11: [
             ("a complete look instead of a single SKU",
@@ -647,6 +712,8 @@ BAGS = {
              "— instead of a single SKU"),
             ("Single-item sessions become full outfits",
              "Single-item sessions become complete travel kits"),
+            ("Stylist-grade cross-sell", "Travel-kit cross-sell"),
+            ("size/fit", "dimensions/capacity"),
         ],
     },
     "slide10_offerings": [
@@ -829,7 +896,7 @@ SHOES = {
             ("“for a Christian wedding”",
              "“for a beach wedding in Goa”"),
             ("“non white gown”",
-             "“waterproof trail running shoe”"),
+             "“embellished block-heel sandal”"),
             ("“red dress”",
              "“white running shoes”"),
             ("“16GM RAM”",
@@ -846,6 +913,10 @@ SHOES = {
             ("“plan my meals”",
              "“comfortable heels for a 12-hour office day”"),
         ],
+        # Slide 9 — future of e-commerce
+        8: [
+            ("virtual try-on", "AR fit prediction"),
+        ],
         # Slide 12 — cross-sell
         11: [
             ("a complete look instead of a single SKU",
@@ -853,6 +924,9 @@ SHOES = {
              "plus care kit — instead of a single SKU"),
             ("Single-item sessions become full outfits",
              "Single-item sessions become complete activity kits"),
+            ("Stylist-grade cross-sell", "Activity-kit cross-sell"),
+            ("occasion, budget, use-case, size/fit",
+             "activity, budget, terrain, size/fit"),
         ],
     },
     "slide10_offerings": [
@@ -1038,9 +1112,9 @@ JEWELLERY = {
             ("“polka saree”",
              "“22kt temple gold jhumka”"),
             ("“for a Christian wedding”",
-             "“for a Maharashtrian mangalsutra”"),
+             "“for sensitive ears that won’t react”"),
             ("“non white gown”",
-             "“hypoallergenic daily-wear earring”"),
+             "“22kt Maharashtrian black-bead mangalsutra”"),
             ("“red dress”",
              "“gold choker necklace”"),
             ("“16GM RAM”",
@@ -1057,6 +1131,10 @@ JEWELLERY = {
             ("“plan my meals”",
              "“lightweight earrings for daily wear”"),
         ],
+        # Slide 9 — future of e-commerce
+        8: [
+            ("virtual try-on", "AR jewellery try-on"),
+        ],
         # Slide 12 — cross-sell
         11: [
             ("a complete look instead of a single SKU",
@@ -1064,6 +1142,9 @@ JEWELLERY = {
              "plus bangles — instead of a single piece"),
             ("Single-item sessions become full outfits",
              "Single-item sessions become complete jewellery sets"),
+            ("Stylist-grade cross-sell", "Jeweller-grade set-building"),
+            ("occasion, budget, use-case, size/fit",
+             "occasion, budget, metal/purity, style"),
         ],
     },
     "slide10_offerings": [
