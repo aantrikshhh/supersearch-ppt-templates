@@ -232,16 +232,16 @@ ELECTRONICS = {
         3: [
             ("scarf and dupatta", "phone and smartphone"),
             ("“Jaipur in May”",
-             "“humid Bengaluru summer”"),
+             "“a new 2BHK apartment”"),
             (" to summer and summer to cotton",
-             " to low-noise and low-noise to inverter"),
-            ("“blazer”", "“laptop for coding”"),
+             " to essentials and essentials to energy-efficient appliances"),
+            ("“blazer”", "“55 inch 4K smart TV”"),
             ("“light pink lehenga”",
-             "“5-star 1.5 ton inverter AC”"),
+             "“1.5 ton 5-star inverter AC”"),
             ("“for an office party”",
              "“for a small 10x12 bedroom”"),
             ("“for a wedding in India in May”",
-             "“that doesn’t spike my summer bill”"),
+             "“that won’t spike my electricity bill”"),
             (
                 "“I need an outfit under 20000 for myself, size medium, "
                 "for my sister’s beach wedding, I like sequins”",
@@ -252,7 +252,7 @@ ELECTRONICS = {
                 "it maps beach to : pastels/boho, wedding to lehenga/"
                 "sharara/gown, adds the conditions for sequins",
                 "it maps college coding to: Intel i5 / 16GB RAM / SSD / "
-                "integrated GPU, adds the conditions for price",
+                "dedicated GPU, adds the conditions for budget",
             ),
         ],
         # Slide 5 — three challenges
@@ -264,7 +264,7 @@ ELECTRONICS = {
             ("“outfit for 90’s themed bachelorette”",
              "“laptop for a college coder”"),
             ("“polka saree”",
-             "“i5 16GB SSD within budget”"),
+             "“i5 16GB SSD laptop”"),
             ("“for a Christian wedding”",
              "“for a small bedroom”"),
             ("“non white gown”",
@@ -272,7 +272,7 @@ ELECTRONICS = {
             ("“red dress”",
              "“smart TV 55 inch 4K”"),
             ("“16GM RAM”",
-             "“16GB RAM”"),
+             "“16 GB raam”"),
             ("“I want an outfit for my birthday”",
              "“I want appliances for my new flat”"),
             ("“I want a laptop good for Photoshop”",
@@ -288,6 +288,8 @@ ELECTRONICS = {
         # Slide 9 — future of e-commerce
         8: [
             ("virtual try-on", "AR room visualization"),
+            ("Sephora, Instacart, Doordash",
+             "Best Buy, Home Depot, Lowe’s"),
         ],
         # Slide 12 — cross-sell
         11: [
@@ -298,6 +300,15 @@ ELECTRONICS = {
              "Single-item sessions become full set-ups"),
             ("Stylist-grade cross-sell", "Expert-grade bundling"),
             ("size/fit", "specs/compatibility"),
+            ("Zalando's AI assistant rollout tied to 18% YoY "
+             "profitability lift — proof the impact shows up in the P&L.",
+             "Best Buy’s GenAI assistant drove agentic AI expansion "
+             "across the storefront — proof the impact shows up in "
+             "the P&L."),
+            ("Myntra's MyFashionGPT: users 3x more likely to purchase "
+             "through the assistant than through keyword search.",
+             "Amazon Rufus: shoppers 60% more likely to complete a "
+             "purchase through the assistant than through keyword search."),
         ],
     },
     "slide10_offerings": [
