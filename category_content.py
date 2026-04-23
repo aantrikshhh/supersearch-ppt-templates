@@ -73,8 +73,18 @@ CLOTHING = {
         ),
     ],
     "text_swaps": {
-        # Template defaults are fashion — minimal swaps.
-        # Leave slides 4, 5, 8, 12 mostly as-is.
+        3: [
+            (
+                "“I need an outfit under 20000 for myself, size medium, "
+                "for my sister’s beach wedding, I like sequins”",
+                "“I need an outfit for myself, size medium, "
+                "for my sister’s beach wedding, I like sequins, "
+                "within budget”",
+            ),
+        ],
+        4: [
+            ("in the next slide", "on slide 11"),
+        ],
     },
     "slide10_offerings": [
         # Keep template defaults for fashion.
@@ -84,7 +94,7 @@ CLOTHING = {
         2: "dupatta / stole / scarf",
         3: "outfit for a summer wedding in Goa",
         4: "what to wear to a formal dinner date",
-        6: "red, sleeveless, v-neck, medium dress under 4000",
+        6: "red, sleeveless, v-neck, medium dress, within budget",
     },
     "graph_definition": {
         "query": "Outfit for my cousin's beach\nwedding in July",
@@ -186,8 +196,8 @@ ELECTRONICS = {
             (
                 "“I need an outfit under 20000 for myself, size medium, "
                 "for my sister’s beach wedding, I like sequins”",
-                "“I need a laptop under 60000 with Intel i5, 16GB RAM and "
-                "SSD for college coding and light gaming”",
+                "“I need a laptop with Intel i5, 16GB RAM and "
+                "SSD for college coding and light gaming, within budget”",
             ),
             (
                 "it maps beach to : pastels/boho, wedding to lehenga/"
@@ -198,13 +208,14 @@ ELECTRONICS = {
         ],
         # Slide 5 — three challenges
         4: [
+            ("in the next slide", "on slide 11"),
             ("fit/cut", "processor/energy-rating"),
             ("“summer” or “polka”",
              "“inverter” or “copper coil”"),
             ("“outfit for 90’s themed bachelorette”",
              "“laptop for a college coder”"),
             ("“polka saree”",
-             "“i5 16GB SSD under 60k”"),
+             "“i5 16GB SSD within budget”"),
             ("“for a Christian wedding”",
              "“for a small bedroom”"),
             ("“non white gown”",
@@ -262,7 +273,7 @@ ELECTRONICS = {
                 "refrigerator.\n\n"
                 "Natural-language queries like “its too hot in my room "
                 "but i cant afford an ac what are my options” resolve to "
-                "budget coolers and fans instead of ₹58,990 split ACs.\n\n"
+                "budget coolers and fans instead of expensive split ACs.\n\n"
                 "Unlocks tier-2 and tier-3 buyers for whom vernacular and "
                 "conversational phrasing are the first language of search."
             ),
@@ -289,15 +300,15 @@ ELECTRONICS = {
         2: "geyser / chimney / cooler",
         3: "appliances for a new 2bhk flat",
         4: "quiet washing machine that fits my bathroom",
-        6: "inverter, 1.5 ton, 5 star, copper coil, split ac under 45k",
+        6: "inverter, 1.5 ton, 5 star, copper coil, split ac, within budget",
     },
     "graph_definition": {
-        "query": "Laptop for college coding and\nlight gaming under 60000",
-        "intents": ["college coding", "light gaming", "under 60000"],
+        "query": "Laptop for college coding and\nlight gaming within budget",
+        "intents": ["college coding", "light gaming", "within budget"],
         "keywords": {
             "college coding": ["i5 / Ryzen 5", "16GB RAM", "SSD"],
             "light gaming": ["dedicated GPU"],
-            "under 60000": ["budget filter"],
+            "within budget": ["budget filter"],
         },
         "sub_keywords": {},
         "results": [
@@ -386,7 +397,7 @@ FURNITURE = {
             (
                 "“I need an outfit under 20000 for myself, size medium, "
                 "for my sister’s beach wedding, I like sequins”",
-                "“I need a compact sofa under 30000 for my 10x12 "
+                "“I need a compact sofa for my 10x12 "
                 "living room, fabric in earth tones, should double as a "
                 "guest bed”",
             ),
@@ -399,6 +410,7 @@ FURNITURE = {
         ],
         # Slide 5 — three challenges
         4: [
+            ("in the next slide", "on slide 11"),
             ("fit/cut", "material/finish"),
             ("“summer” or “polka”",
              "“compact” or “sheesham”"),
@@ -485,7 +497,7 @@ FURNITURE = {
         2: "almirah / sofa cum bed",
         3: "furniture for new 2bhk apartment",
         4: "office chair for back pain while WFH",
-        6: "sheesham, 6-seater, teak, dining table under 60k",
+        6: "sheesham, 6-seater, teak, dining table, within budget",
     },
     "graph_definition": {
         "query": "Compact sofa for a 10x12 living room\nthat doubles as a guest bed",
@@ -588,7 +600,7 @@ BAGS = {
                 "“I need an outfit under 20000 for myself, size medium, "
                 "for my sister’s beach wedding, I like sequins”",
                 "“I need a waterproof laptop backpack with USB charging "
-                "port, anti-theft zippers, and a trolley sleeve under 3000”",
+                "port, anti-theft zippers, and a trolley sleeve, within budget”",
             ),
             (
                 "it maps beach to : pastels/boho, wedding to lehenga/"
@@ -600,6 +612,7 @@ BAGS = {
         ],
         # Slide 5 — three challenges
         4: [
+            ("in the next slide", "on slide 11"),
             ("fit/cut", "material/closure"),
             ("“summer” or “polka”",
              "“waterproof” or “anti-theft”"),
@@ -690,7 +703,7 @@ BAGS = {
         2: "crossbody / sling bag / messenger",
         3: "bag for a European backpacking trip",
         4: "something to carry gym clothes and work laptop",
-        6: "waterproof, laptop sleeve, USB port, anti-theft, backpack under 3000",
+        6: "waterproof, laptop sleeve, USB port, anti-theft, backpack, within budget",
     },
     "graph_definition": {
         "query": "Crossbody bag for travel that fits\na water bottle and passport",
@@ -793,7 +806,7 @@ SHOES = {
                 "“I need an outfit under 20000 for myself, size medium, "
                 "for my sister’s beach wedding, I like sequins”",
                 "“I need white cushioned running shoes with arch "
-                "support for flat feet, wide toe box, under 5000”",
+                "support for flat feet, wide toe box, within budget”",
             ),
             (
                 "it maps beach to : pastels/boho, wedding to lehenga/"
@@ -805,6 +818,7 @@ SHOES = {
         ],
         # Slide 5 — three challenges
         4: [
+            ("in the next slide", "on slide 11"),
             ("fit/cut", "arch/cushioning"),
             ("“summer” or “polka”",
              "“cushioned” or “breathable”"),
@@ -895,7 +909,7 @@ SHOES = {
         2: "sneakers / trainers / sports shoes",
         3: "shoes for a beach wedding in Goa",
         4: "comfortable heels for standing all day at work",
-        6: "cushioned, wide toe box, arch support, running shoe under 5000",
+        6: "cushioned, wide toe box, arch support, running shoe, within budget",
     },
     "graph_definition": {
         "query": "Comfortable heels for an all-day\nwedding that won’t hurt",
@@ -957,7 +971,7 @@ JEWELLERY = {
         (
             "CaratLane (Tata/Tanishq)",
             " — pioneer AR virtual try-on since 2015, 200% app usage "
-            "increase, 40% of business from AR app. Rs 883 Cr quarterly "
+            "increase, 40% of business from AR app. $100M+ quarterly "
             "revenue.",
         ),
         (
@@ -969,7 +983,7 @@ JEWELLERY = {
         (
             "BlueStone",
             " — AI/ML for UX, AR try-on, blockchain authentication. "
-            "SEBI-approved ₹1,000 Cr IPO.",
+            "SEBI-approved $120M IPO.",
         ),
         (
             "Kalyan (Candere), Malabar Gold",
@@ -1001,7 +1015,7 @@ JEWELLERY = {
             (
                 "“I need an outfit under 20000 for myself, size medium, "
                 "for my sister’s beach wedding, I like sequins”",
-                "“I need a lightweight gold necklace under 30000, "
+                "“I need a lightweight gold necklace within budget, "
                 "22kt BIS hallmark, minimalist for daily wear, "
                 "that won’t tangle”",
             ),
@@ -1015,6 +1029,7 @@ JEWELLERY = {
         ],
         # Slide 5 — three challenges
         4: [
+            ("in the next slide", "on slide 11"),
             ("fit/cut", "karat/purity"),
             ("“summer” or “polka”",
              "“hallmark” or “antique finish”"),
@@ -1105,16 +1120,16 @@ JEWELLERY = {
         2: "mangalsutra / thali / minnu",
         3: "jewellery for a South Indian wedding",
         4: "lightweight daily-wear earrings for sensitive ears",
-        6: "22kt, BIS hallmark, antique, temple choker under 50000",
+        6: "22kt, BIS hallmark, antique, temple choker, within budget",
     },
     "graph_definition": {
-        "query": "Lightweight gold necklace for\ndaily wear under 30000",
-        "intents": ["lightweight", "gold", "daily wear", "under 30000"],
+        "query": "Lightweight gold necklace for\ndaily wear within budget",
+        "intents": ["lightweight", "gold", "daily wear", "within budget"],
         "keywords": {
             "lightweight": ["under 10g"],
             "gold": ["22kt", "18kt"],
             "daily wear": ["minimalist", "durable"],
-            "under 30000": ["budget filter"],
+            "within budget": ["budget filter"],
         },
         "sub_keywords": {},
         "results": [
