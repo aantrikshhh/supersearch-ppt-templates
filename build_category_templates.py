@@ -88,6 +88,20 @@ def build_template(category_key):
             if desc_shape:
                 set_shape_text(desc_shape, cfg["desc"])
 
+    # --- Slide 4: replace "Shopper Says" table image -------------------------
+    table_img_path = GRAPHS_DIR / f"{category_key}_table.png"
+    if table_img_path.exists():
+        s4 = slides[3]
+        for shape in s4.shapes:
+            if shape.shape_type == 13:  # PICTURE
+                left, top, width, height = shape.left, shape.top, shape.width, shape.height
+                sp = shape._element
+                sp.getparent().remove(sp)
+                s4.shapes.add_picture(
+                    str(table_img_path), left, top, width=width, height=height,
+                )
+                break
+
     # --- Slide 11: replace knowledge graph image ----------------------------
     s11 = slides[10]
     for shape in s11.shapes:
