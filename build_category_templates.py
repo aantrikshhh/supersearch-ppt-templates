@@ -25,9 +25,24 @@ from graph_generator import generate_graph
 
 
 BASE_DIR = Path(__file__).parent
-TEMPLATE = BASE_DIR / "_base_template.pptx"
+BASE_TEMPLATES = {
+    "indian": BASE_DIR / "_base_template_indian.pptx",
+    "western": BASE_DIR / "_base_template_western.pptx",
+}
 OUTPUT_DIR = BASE_DIR / "output"
 GRAPHS_DIR = BASE_DIR / "graphs"
+
+
+def base_template_for(cat):
+    """Return the base PPTX path for a category. Defaults to the Indian
+    base when `cat["base"]` is missing."""
+    base_key = cat.get("base", "indian")
+    if base_key not in BASE_TEMPLATES:
+        raise ValueError(
+            f"Unknown base '{base_key}' on category '{cat.get('label')}'. "
+            f"Choose from {list(BASE_TEMPLATES)}."
+        )
+    return BASE_TEMPLATES[base_key]
 
 
 def build_template(category_key):
@@ -39,7 +54,7 @@ def build_template(category_key):
     if not graph_path.exists():
         generate_graph(cat["graph_definition"], graph_path)
 
-    shutil.copy(TEMPLATE, out_path)
+    shutil.copy(base_template_for(cat), out_path)
     prs = Presentation(str(out_path))
     slides = list(prs.slides)
 

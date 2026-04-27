@@ -18,6 +18,7 @@ Each category dict contains:
 
 CLOTHING = {
     "label": "Clothing",
+    "base": "indian",
     "competitors_global": [
         (
             "Amazon Rufus",
@@ -84,11 +85,9 @@ CLOTHING = {
         ],
         4: [
             ("in the next slide", "on slide 11"),
-            ('"16GM RAM"', '"cotton kurta"'),
         ],
-        7: [
-            ('"plan my meals"', '"complete look for a festive season"'),
-        ],
+        # Slide 8 needs no overrides — the Indian base already ships
+        # "what to wear to a sangeet" out of the box.
     },
     "slide10_offerings": [
         {
@@ -173,6 +172,7 @@ CLOTHING = {
 
 ELECTRONICS = {
     "label": "Electronics",
+    "base": "indian",
     "competitors_global": [
         (
             "Best Buy",
@@ -232,12 +232,12 @@ ELECTRONICS = {
         3: [
             ("scarf and dupatta", "phone and smartphone"),
             ("“Jaipur in May”",
-             "“a new 2BHK apartment”"),
+             "“hot summer in Chennai”"),
             (" to summer and summer to cotton",
-             " to essentials and essentials to energy-efficient appliances"),
-            ("“blazer”", "“55 inch 4K smart TV”"),
+             " to cooling and cooling to energy-efficient inverter AC"),
+            ("“blazer”", "“split AC”"),
             ("“light pink lehenga”",
-             "“1.5 ton 5-star inverter AC”"),
+             "“gaming laptop”"),
             ("“for an office party”",
              "“for a small 10x12 bedroom”"),
             ("“for a wedding in India in May”",
@@ -271,18 +271,18 @@ ELECTRONICS = {
              "“5-star copper-coil inverter AC”"),
             ("“red dress”",
              "“smart TV 55 inch 4K”"),
-            ("“16GM RAM”",
-             "“16 GB raam”"),
+            ("“cotton kurta”",
+             "“refrigerator”"),
             ("“I want an outfit for my birthday”",
              "“I want appliances for my new flat”"),
-            ("“I want a laptop good for Photoshop”",
+            ("“I want a saree gift for my mother-in-law’s birthday”",
              "“I want a laptop good for Photoshop and light gaming”"),
         ],
         # Slide 8 — current offerings
         7: [
             ("“outfit for Ladakh trip”",
              "“appliances for a new flat”"),
-            ("“plan my meals”",
+            ("“what to wear to a sangeet”",
              "“quiet washing machine that fits my bathroom”"),
         ],
         # Slide 9 — future of e-commerce
@@ -394,6 +394,7 @@ ELECTRONICS = {
 
 FURNITURE = {
     "label": "Furniture",
+    "base": "indian",
     "competitors_global": [
         (
             "Wayfair Muse",
@@ -488,18 +489,18 @@ FURNITURE = {
             ("“non white gown”",
              "“ergonomic WFH chair”"),
             ("“red dress”", "“queen size bed”"),
-            ("“16GM RAM”",
+            ("“cotton kurta”",
              "“6-seater dining table”"),
             ("“I want an outfit for my birthday”",
              "“I want furniture for my new home”"),
-            ("“I want a laptop good for Photoshop”",
+            ("“I want a saree gift for my mother-in-law’s birthday”",
              "“I want a sofa that fits my 10x12 living room”"),
         ],
         # Slide 8 — current offerings
         7: [
             ("“outfit for Ladakh trip”",
              "“furniture for a new 2BHK”"),
-            ("“plan my meals”",
+            ("“what to wear to a sangeet”",
              "“office chair for back pain”"),
         ],
         # Slide 9 — future of e-commerce
@@ -598,6 +599,7 @@ FURNITURE = {
 
 BAGS = {
     "label": "Bags",
+    "base": "indian",
     "competitors_global": [
         (
             "Michael Kors (Shopping Muse)",
@@ -698,18 +700,18 @@ BAGS = {
              "“airline-compliant carry-on”"),
             ("“red dress”",
              "“tan leather tote”"),
-            ("“16GM RAM”",
+            ("“cotton kurta”",
              "“crossbody with bottle pocket”"),
             ("“I want an outfit for my birthday”",
              "“I need a bag for gym and work”"),
-            ("“I want a laptop good for Photoshop”",
+            ("“I want a saree gift for my mother-in-law’s birthday”",
              "“I want a carry-on that fits my 15-inch laptop”"),
         ],
         # Slide 8 — current offerings
         7: [
             ("“outfit for Ladakh trip”",
              "“carry-on for a 2-week Europe trip”"),
-            ("“plan my meals”",
+            ("“what to wear to a sangeet”",
              "“bag for gym clothes and work laptop”"),
         ],
         # Slide 9 — future of e-commerce
@@ -808,6 +810,7 @@ BAGS = {
 
 SHOES = {
     "label": "Shoes",
+    "base": "indian",
     "competitors_global": [
         (
             "Puma (AI Shopping Assistant)",
@@ -910,18 +913,18 @@ SHOES = {
              "“embellished block-heel sandal”"),
             ("“red dress”",
              "“white running shoes”"),
-            ("“16GM RAM”",
+            ("“cotton kurta”",
              "“wide-fit walking shoes”"),
             ("“I want an outfit for my birthday”",
              "“I need shoes for my bad knees”"),
-            ("“I want a laptop good for Photoshop”",
+            ("“I want a saree gift for my mother-in-law’s birthday”",
              "“I want running shoes for overpronation”"),
         ],
         # Slide 8 — current offerings
         7: [
             ("“outfit for Ladakh trip”",
              "“running shoes for flat feet”"),
-            ("“plan my meals”",
+            ("“what to wear to a sangeet”",
              "“comfortable heels for a 12-hour office day”"),
         ],
         # Slide 9 — future of e-commerce
@@ -1021,6 +1024,7 @@ SHOES = {
 
 JEWELLERY = {
     "label": "Jewellery",
+    "base": "indian",
     "competitors_global": [
         (
             "Pandora (Gemma)",
@@ -1128,18 +1132,18 @@ JEWELLERY = {
              "“22kt Maharashtrian black-bead mangalsutra”"),
             ("“red dress”",
              "“gold choker necklace”"),
-            ("“16GM RAM”",
+            ("“cotton kurta”",
              "“antique kundan bridal set”"),
             ("“I want an outfit for my birthday”",
              "“I need jewellery for my wedding”"),
-            ("“I want a laptop good for Photoshop”",
+            ("“I want a saree gift for my mother-in-law’s birthday”",
              "“I want earrings that won’t irritate sensitive ears”"),
         ],
         # Slide 8 — current offerings
         7: [
             ("“outfit for Ladakh trip”",
              "“jewellery for a South Indian wedding”"),
-            ("“plan my meals”",
+            ("“what to wear to a sangeet”",
              "“lightweight earrings for daily wear”"),
         ],
         # Slide 9 — future of e-commerce
@@ -1235,11 +1239,35 @@ JEWELLERY = {
 
 
 # ---------------------------------------------------------------------------
+# Clothing — Western variant
+# ---------------------------------------------------------------------------
+# Identical to CLOTHING but built from `_base_template_western.pptx`. The
+# only meaningful divergence is on slides 5 + 8 where the Western base
+# carries Western fashion phrases ("summer floral dress", "outfit for my
+# college reunion", "what to wear to a friend's wedding") instead of the
+# Indian-flavoured ones in the Indian base. The first comparison-table
+# example is also tuned to match the Western default. Everything else —
+# competitors, narrative, knowledge graph, slide 10 offerings — works for
+# both regions and stays identical to CLOTHING.
+
+CLOTHING_WESTERN = {
+    **CLOTHING,
+    "label": "Clothing_Western",
+    "base": "western",
+    "comparison_examples": {
+        **CLOTHING["comparison_examples"],
+        1: "summer floral dress",
+    },
+}
+
+
+# ---------------------------------------------------------------------------
 # Registry
 # ---------------------------------------------------------------------------
 
 CATEGORIES = {
     "clothing": CLOTHING,
+    "clothing_western": CLOTHING_WESTERN,
     "electronics": ELECTRONICS,
     "bags": BAGS,
     "shoes": SHOES,
